@@ -259,116 +259,231 @@ body{
 
 /* ================= TABLET ================= */
 
-@media(max-width: 1100px){
+/* ================= RESPONSIVE DESIGN ================= */
 
-  .hero,
-  .second-section{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-left,
-  .hero-right,
-  .section-left,
-  .section-right{
-    width: 100%;
-  }
-
-  .hero-left h1{
-    margin: auto;
-    margin-bottom: 24px;
-  }
-
-  .hero-left > p{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
-  }
-
-  .hero-points{
-    align-items: center;
-  }
-
-  .hero-buttons{
-    justify-content: center;
-  }
-
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* ================= MOBILE ================= */
+/* TABLET */
+@media (max-width: 1100px) {
 
-@media(max-width: 768px){
+    .navbar {
+        padding: 20px 40px;
+    }
 
-  .navbar{
-    padding: 20px;
-    justify-content: center;
-  }
+    .hero,
+    .second-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-  .nav-links{
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .hero,
-  .second-section{
-    padding: 40px 20px;
-  }
-
-  .hero-left h1{
-    font-size: 48px;
-    line-height: 60px;
-  }
-
-  .hero-left > p{
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  .section-right h2{
-    font-size: 36px;
-    line-height: 50px;
-  }
-
-  .hero-buttons{
-    flex-direction: column;
-  }
-
-  .primary-btn,
-  .secondary-btn,
-  .contact-btn{
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .feature{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
+    .hero-left h1 {
+        font-size: 64px;
+        line-height: 1.1;
+    }
 }
 
-/* ================= SMALL MOBILE ================= */
 
-@media(max-width: 480px){
+/* TABLET / SMALL LAPTOP */
+@media (max-width: 900px) {
 
-  .hero-left h1{
-    font-size: 38px;
-    line-height: 50px;
-  }
+    .navbar {
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 18px;
+    }
 
-  .section-right h2{
-    font-size: 30px;
-    line-height: 42px;
-  }
+    .nav-links {
+        width: 100%;
+        gap: 18px;
+        justify-content: center;
+    }
 
-  .nav-links{
-    gap: 12px;
-  }
+    .contact-btn {
+        width: 220px;
+    }
 
-  .nav-links a{
-    font-size: 14px;
-  }
+    /* HERO */
 
+    .hero,
+    .second-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 24px;
+        gap: 50px;
+    }
+
+    .hero-left,
+    .hero-right,
+    .section-left,
+    .section-right {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-left h1 {
+        max-width: 700px;
+        margin: 0 auto 24px;
+        font-size: 58px;
+        line-height: 1.1;
+    }
+
+    .hero-left > p {
+        max-width: 650px;
+        margin: 0 auto 30px;
+    }
+
+    .hero-points {
+        align-items: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-right img,
+    .section-left img {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+    }
+
+    /* SECOND SECTION */
+
+    .section-right h2 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .feature {
+        text-align: left;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav-links {
+        gap: 10px 14px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 300px;
+        height: 44px;
+    }
+
+
+    /* HERO + SECOND SECTION */
+
+    .hero,
+    .second-section {
+        padding: 40px 16px;
+        gap: 36px;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .hero-left > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* HERO POINTS */
+
+    .point {
+        width: 100%;
+        max-width: 330px;
+        text-align: left;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        max-width: 330px;
+    }
+
+
+    /* SECOND SECTION */
+
+    .section-right h2 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+
+    /* FEATURE CARDS */
+
+    .feature {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px;
+        text-align: left;
+    }
+
+    .feature img {
+        width: 42px;
+        flex-shrink: 0;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* VERY SMALL MOBILE */
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 8px 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero-left h1 {
+        font-size: 34px;
+    }
+
+    .section-right h2 {
+        font-size: 27px;
+    }
 }
